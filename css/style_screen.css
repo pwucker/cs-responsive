@@ -1,0 +1,131 @@
+/* media breakpoints
+
+@media (min-width: 1200px)
+@media (max-width: 979px)
+@media (min-width: 768px) and (max-width: 979px)
+@media (max-width: 767px)
+@media (max-width: 480px)
+
+Ipad landscape is 1024
+Ipad portrait is 768
+
+*/
+
+/* ----------------------- Override and Custom Styles Start -------------------------- */
+
+/* responsive logo ----------- */
+
+    .logo {
+    width:100%;
+    }
+
+/* general stuff ----------- */
+
+    .carousel-slide {
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 4em;
+    font-size:2em;
+    text-align: center;
+    background-color: #eee;
+    }
+
+    .btn-cta {
+    padding:1.4em;
+    }
+
+    .marginleft {
+    margin: 0px 0px 0px 20px;
+    }
+
+    .darker {
+      background-color: #ddd;
+    }
+
+/* nav styles ----------- */
+
+    .cs-nav {
+    width: 100%;
+    }
+
+    .cs-nav > li {
+    padding:0 1.5em 0 0;
+    font-size:1em;
+    }
+
+/* search form styles - resize to same nav height ----------- */
+
+    .row-fluid input[class*="span"] {
+    padding: 1.45em;
+    }
+    .row-fluid button[class*="span"] {
+    padding:0.7em;
+    }  
+
+
+
+/* ----------------------- Responsive Styles -------------------------- */
+
+/* Large desktop */
+@media (min-width: 1200px) { 
+  .cs-nav > li {
+  padding:0 3.2em 0 3.2em;
+  font-size:1em;
+  }
+}
+
+/* Smaller desktop */ 
+@media (min-width: 979px) and (max-width: 1200px) {
+  .cs-nav > li {
+  padding:0 1.9em 0 1.9em;
+  font-size:1em;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .logo {
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+  .btn-cta {
+    font-size:1.2em;
+    padding:1.45em;
+  }
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+  }
+  .row-fluid input[class*="span"] {
+    width:86%;
+  }
+  .row-fluid button[class*="span"] {
+    width:11%;
+  }
+  #content {
+    margin-top: 20px;
+  }
+
+}
+ 
+/* Landscape phones and down
+@media (max-width: 480px) {
+  .navbar-inner{
+    background:-moz-linear-gradient(top, #8a8a8a, #000000);
+    background:-ms-linear-gradient(top, #8a8a8a, #000000);
+    background:-o-linear-gradient(top, #8a8a8a, #000000);
+    background:-webkit-gradient(linear, center top, center bottom, from(#8a8a8a), to(#000000));
+    background:-webkit-linear-gradient(top, #8a8a8a, #000000);
+    background:linear-gradient(top, #8a8a8a, #000000);;
+    }
+}
+ */
+
+
